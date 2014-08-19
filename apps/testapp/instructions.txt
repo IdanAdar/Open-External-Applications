@@ -1,0 +1,25 @@
+Instructions for Android:
+==========================
+
+1. Build and deploy (to generate the native folder)
+2. Verify the files in the nativeResources folder are copied over to the native folder after buildtime.
+   If not, copy them over:
+
+   - OpenExternalAppPlugin.java to the native\src\com\testapp folder
+   - config.xml to the native\res\xml folder
+
+3. Run on Android device or emulator
+
+Instructions for iOS:
+======================
+
+1. Build and deploy (to generate the native folder) (or simply right-click on the iPhone environment and select Run As > Xcode project)
+2. In Xcode, verify the files in the nativeResources folder are copied over to the native folder after buildtime.
+   If not, copy them over:
+
+   - config.xml to the Resources folder
+   - OpenExternalAppPlugin.h and OpenExternalAppPlugin.m to the Classes folder
+
+3. In Xcode, right-lick on the Resources\Class folder and select "Add..."
+4. Add the above mentioned .h and .m files
+5. Run in iOS device or simulator
